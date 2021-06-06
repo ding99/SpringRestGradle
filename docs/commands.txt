@@ -1,0 +1,8 @@
+# Read One
+curl -i -H"Content-Type: application/json" -X GET localhost:9092/api/user/1
+
+# Read All
+curl -i -H"Content-Type: application/json" -X GET localhost:9092/api/user
+
+# Save One
+curl -i -H"Content-Type: application/json" -X POST -d '{"id": 1,"name":"Jason"}' localhost:9092/api/user
